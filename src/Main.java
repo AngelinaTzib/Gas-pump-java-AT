@@ -73,10 +73,11 @@ public class Main {
 
                 System.out.println("Thank you for your purchase!");
                 System.out.println("payment: " + pay);
-                System.out.println("Amount spent: $" + gasmoney);
-                System.out.println(String.format("Gallons purchased: %.2f", gallons));
+                System.out.println(String.format("Amount spent: $%.2f", gasmoney));
+                System.out.println(String.format("Gallons purchased: %.1f", gallons));
                 break;
             }
+
             else if (pay.equals("after")) {
                 System.out.println("What grade?");
                 System.out.println("- Regular $2.50/gal");
@@ -96,8 +97,8 @@ public class Main {
 
                 System.out.println("Thank you for your purchase!");
                 System.out.println("payment: " + pay);
-                System.out.println("Amount spent: $" + gasmoney);
-                System.out.println(String.format("Gallons purchased: %.2f", gallons));
+                System.out.println(String.format("Amount spent: $%.2f", gasmoney));
+                System.out.println(String.format("Gallons purchased: %.1f", gallons));
                 break;
             }
             
