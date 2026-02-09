@@ -49,13 +49,13 @@ public class Main {
         System.out.println("Pay before or after?");
 
         while(true){
-            System.out.println("> ");
+            System.out.print("> ");
             String userinput = scanner.nextLine();
             String pay = before_or_after(userinput);
 
             if (pay.equals("before")) {
                 System.out.println("How much are you spending?");
-                System.out.println(">");
+                System.out.print("> ");
                 userinput = scanner.nextLine();
 
                 Float gasmoney = Float.parseFloat(userinput);
@@ -65,7 +65,7 @@ public class Main {
                 System.out.println("- Mid-grade $3.00/gal");
                 System.out.println("- Premium $3.50/gal");
 
-                System.out.println(">");
+                System.out.print("> ");
                 userinput = scanner.nextLine();
                 Float gradeprice = get_grade(userinput);
                 Float gallons = get_gallons(gasmoney, gradeprice);
@@ -83,13 +83,13 @@ public class Main {
                 System.out.println("- Regular $2.50/gal");
                 System.out.println("- Mid-grade $3.00/gal");
                 System.out.println("- Premium $3.50/gal");
-                System.out.println(">");
+                System.out.print("> ");
 
                 userinput = scanner.nextLine();
                 Float gradeprice = get_grade(userinput);
 
                 System.out.println("How many gallons of gas did you pump?");
-                System.out.println(">");
+                System.out.print("> ");
 
                 userinput = scanner.nextLine();
                 Float gallons = Float.parseFloat(userinput);
